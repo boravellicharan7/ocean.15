@@ -1,0 +1,244 @@
+header{
+    background-color: lightblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 30px;
+    font-family: sans-serif;
+}
+h1{
+    font-family: sans-serif;
+}
+ul{
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+}
+ul a{
+    text-decoration: none;
+}
+
+#about{
+    padding: 10px;
+    margin-top: 5px;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    background-color: #CCD5AE;
+}
+#about > div >img{
+    width: 300px;
+    animation-name: surya;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes surya{
+    0%{
+        border-radius: 50%;
+    }
+}
+.about-right p{
+    font-size: 25px;
+    font-family: cursive;
+}
+#skills{
+    font-family: sans-serif;
+    margin-top: 5px;
+    padding: 10px;
+    display: flex;
+    background-color: darkslategrey;
+    justify-content: space-around;
+    transition: all ease-in-out 3s 0s;
+}
+#skills:hover{
+    background-color: lightslategray;
+}
+table,th,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+table{
+    transition: all ease-in-out 3s 0s;
+}
+table:hover{
+    scale: 1.08;
+    box-shadow: 4px 4px 7px wheat;
+    border-radius: 20%;
+}
+th,td{
+    padding: 20px 50px;
+}
+th{
+    background-color: #77E4C8;
+}
+td{
+    background-color: #A0937D;
+}
+#projects {
+    display: flex;
+    font-family: sans-serif;
+    gap: 10px;
+}
+#projects > div:hover{
+    background-color: darkolivegreen;
+    scale: 1.03;
+}
+#projects > div{
+    transition: all ease-in-out 3s 0s;
+    padding: 10px;
+    margin-top: 5px;
+    background-color: lightsalmon;
+    width: 400px;
+    height: 300px;
+}
+#projects div > img{
+    width:100% ;
+    height: 70%;
+}
+#projects div > h2{
+    margin-top: -2px;
+}
+.P_links{
+    display: flex;
+    justify-content: space-between;
+}
+#contact{
+    font-family: sans-serif;
+    margin-top: 5px;
+    text-align: center;
+    background-color: lightgray;
+    padding: 10px;
+}
+#contact input{
+    font-family: sans-serif;
+    width: 50%;
+    padding: 10px 0px;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 14px;
+    outline: none;
+    border: none;
+    background-color: whitesmoke;
+    transition: all ease-in-out 3s 0s;
+}
+#contact input:hover{
+    scale: 1.03;
+    background-color: lightsteelblue;
+    color: black;
+    box-shadow: 3px 3px 5px black;
+}
+#contact P{
+    background-color: rgb(66, 66, 220);
+    padding: 10px;
+    width: 50%;
+   margin: 1% auto;
+   transition: all ease-in-out 1s 0s;
+}
+#contact P:hover{
+    background-color: lightskyblue;
+    color: darkslategray;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px black;
+}
+footer{
+    margin-top: 10px;
+    padding: 5% ;
+    font-size: 30px;
+    font-family: sans-serif;
+}
+footer{
+    background-color: lightblue;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+footer .social-Links,footer .up-links{
+    display: flex;
+    justify-content: space-around;
+}
+.a{
+    padding: 10px;
+    text-decoration: none;
+    transition-duration: 1s;
+    transition-property: all;
+    transition-delay: 0s;
+    color: black;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+.a:hover{
+    scale: 1.1;
+    background-color: #A0937D;
+    color: black;
+    border-radius: 5px;
+    box-shadow: 3px 3px 2px whitesmoke;
+}
+@media screen and (max-width:425px) {
+    header{
+        width: 585px;
+    }
+    #about{
+        width: 625px;
+    }
+    #skills{
+        width: 625px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+    #projects {
+        width: 645px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    #contact{
+        width: 625px;
+    }
+    footer{
+        width: 620px;
+    }
+}
+@media screen and (min-width:426px) and (max-width:768px){
+    header{
+        width: 692px;
+    }
+    #about{
+        width: 730px;
+    }
+    #skills{
+        width: 730px;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    #skills > div{
+        width: 250px;
+    }
+    #projects {
+        width: 730px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    #projects > div{
+        width: 250px;
+    }
+    #contact{
+        width: 730px;
+    }
+    footer{
+        width: 675px;
+    }
+}
